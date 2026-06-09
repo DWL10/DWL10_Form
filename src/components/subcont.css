@@ -1,0 +1,39 @@
+.subcont{
+    display: grid;
+    color: white;
+    place-content: left;
+    max-height: 500px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #171728;
+    padding-left: 70px;
+    padding-right: 70px;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: opacity 0.5s ease,
+                max-height 0.5s ease;
+}
+
+
+.form-check-input.radio {
+  border-color: #697988; /* Color del borde apagado */
+  background-color: transparent;
+}
+
+.form-check-input.radio:hover {
+  border-color: #7b8ae0; /* Color al pasar el mouse */
+}
+
+
+.form-check-input.radio:checked {
+  background-color: #7b8ae0; /* Color de fondo cuando está activo */
+  border-color: #7b8ae0;     /* Color del borde cuando está activo */
+  
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23000000'/%3e%3c/svg%3e");
+}
+
+.form-check-input.radio:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+  border-color: #7b8ae0;
+}

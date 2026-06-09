@@ -8,14 +8,16 @@ export default function Succesful()
     const navigate = useNavigate();
     const headerStyle = {
         backgroundImage: `url(${bannerImg})`,
-        backgroundPositionY: '-50px',
         backgroundSize: 'cover', 
-        backgroundPositionX: 'center',
+        backgroundPosition: 'center center', 
+        backgroundRepeat: 'no-repeat',       
         top: 0,
         zIndex: 9999,
         maxWidth: '1000px', 
         height: '120px',
-      };
+        width: '100%',                       
+        margin: '0 auto',                    
+    };
 
     return(
         <div className="container-fluid d-flex flex-column align-items-center py-4">

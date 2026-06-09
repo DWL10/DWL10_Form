@@ -38,27 +38,31 @@ export default function offline(){
     })
 
     return (
-        <>
-            <div className="justify-content-center align-items-center vh-100">
-                <div className="text-center p-3">
-                    
-                    <img 
+    <>
+
+        <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 w-100 px-3">
+            
+            <div className="text-center p-3" style={{ maxWidth: '1000px', width: '100%' }}>
+                <img 
                     src={pageModes[pageState].img} 
                     alt={pageModes[pageState].desc} 
-                    className="img-fluid rounded" 
-                    style={{ maxWidth: '1000px' }} // Limita el tamaño máximo para que no se vea gigante en PC
-                    />
-                    
-                </div>
-                <div className='text-center p-3' style={{display:status=='offline' ? 'block' : 'none',color:'white'}}>
-                    <h4>Apologies! The form is currently closed by two possible reasons:</h4>
-                    <ul style={{listStyleType:'none'}}>
-                        <li>The form is closed at the moment</li>
-                        <li>Han error has occurred with the connection</li>
-                    </ul>
-                    <p>Since you are here, do you desire to distract a little? <Link><span title='Currently in development'>Play my game!🐺</span></Link></p>
-                </div>
+                    className="img-fluid rounded w-100 h-auto" 
+                />
             </div>
-        </>
-    )
+            
+            <div className='text-center p-3' style={{ display: status === 'offline' ? 'block' : 'none', color: 'white' }}>
+                <h4>Apologies! The form is currently closed for two possible reasons:</h4>
+                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                    <li>The form is closed at the moment</li>
+                    <li>An error has occurred with the connection</li>
+                </ul>
+                <p>
+                    Since you are here, do you desire to distract yourself a little?{' '}
+                    <Link><span title='Currently in development'>Play my game!🐺</span></Link>
+                </p>
+            </div>
+
+        </div>
+    </>
+)
 }

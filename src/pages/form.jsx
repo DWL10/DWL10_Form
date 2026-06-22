@@ -165,8 +165,8 @@ being a total of 18`
 
           <ChoiceBox
             label="¿Extra characters?"
-            options={["No extra character","1 extra character (+50%)","2 extra character (+100%)","2 extra character (+150%)"]}
-            values={["No extra character","1 extra character (+50%)","2 extra character (+100%)","2 extra character (+150%)"]}
+            options={["No extra character","1 extra character (+50%)","2 extra character (+100%)","3 extra character (+150%)"]}
+            values={["No extra character","1 extra character (+50%)","2 extra character (+100%)","3 extra character (+150%)"]}
             selectedValue={extraCht}
             onChange={setExtraCht}
           />

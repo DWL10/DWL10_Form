@@ -51,7 +51,7 @@ export class FileManagment {
         compression: 'DEFLATE' 
         });
 
-        const nombreZip = `${this.clientName || 'imagenes'}Images.zip`;
+        const nombreZip = `${this.clientName || 'imagenes'}.zip`;
         const zipFile = new File([zipBlob], nombreZip, { type: 'application/zip' });
         
         return zipFile;
